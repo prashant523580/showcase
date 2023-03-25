@@ -75,7 +75,7 @@ export default function Sercices() {
                 services.map((service, ind) => {
                     return (
 
-                        <Accordion expanded={expanded === `panel${ind}`} onChange={handleChange(`panel${ind}`)}>
+                        <Accordion key={ind} expanded={expanded === `panel${ind}`} onChange={handleChange(`panel${ind}`)}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1bh-content"
