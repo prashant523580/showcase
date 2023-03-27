@@ -85,7 +85,7 @@ function TabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ py: 3 }}>
+        <Box sx={{ py: 5 }}>
           {children}
         </Box>
       )}
@@ -141,12 +141,12 @@ export default function CustomTabs() {
         <Tabs data-aos="fade-up" data-aos-duration="1000" variant='scrollable' indicatorColor='secondary' TabIndicatorProps={{
             
             style:{
-                background:"purple"
+                background:"black"
             },
         }} value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab sx={{color:"purple", fontWeight:"bold"}}  label="All" {...a11yProps(0)} />
-          <Tab sx={{color:"purple", fontWeight:"bold"}}  label="Arts" {...a11yProps(1)} />
-          <Tab sx={{color:"purple", fontWeight:"bold"}}  label="illustrate" {...a11yProps(2)} />
+          <Tab sx={{color:"black", fontWeight:"bold"}}  label="All" {...a11yProps(0)} />
+          <Tab sx={{color:"black", fontWeight:"bold"}}  label="Arts" {...a11yProps(1)} />
+          <Tab sx={{color:"black", fontWeight:"bold"}}  label="illustrate" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
