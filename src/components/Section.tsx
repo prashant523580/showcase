@@ -15,14 +15,14 @@ export default function Section(props: PropsTypes) {
         targetElement:target.current
     })
     return (
-        <ParallaxBanner>
+        // <ParallaxBanner>
             <div>
 
-<ParallaxBannerLayer
-//  children={ {<Image src={props.bgImg} fill alt='cover' /> }} 
+{/* <ParallaxBannerLayer
+ children={ {<Image src={props.bgImg} fill alt='cover' /> }} 
 className='-z-10' 
 image={props.bgImg} 
-speed={10} />
+speed={10} /> */}
             <div className='px-4 py-14 sm:py-20 lg:px-10'>
                 {
                     props.headTitle &&
@@ -36,7 +36,7 @@ speed={10} />
                 }
                 {props.children}
                 </div>
+        {/* </ParallaxBanner> */}
             </div>
-        </ParallaxBanner>
     )
 }
